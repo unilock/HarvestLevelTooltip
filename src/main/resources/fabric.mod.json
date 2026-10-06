@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "harvestleveltooltip",
+  "version": "${version}",
+  "name": "Harvest Level Tooltip",
+  "description": "Displays a tool's harvest level in its tooltip",
+  "authors": [
+    "unilock"
+  ],
+  "contact": {
+    "sources": "https://github.com/unilock/HarvestLevelTooltip",
+    "issues": "https://github.com/unilock/HarvestLevelTooltip/issues"
+  },
+  "license": "PolyForm-Shield-1.0.0",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "cc.unilock.harvestleveltooltip.HLTInit"
+    ],
+    "client": [
+      "cc.unilock.harvestleveltooltip.HLTInitClient"
+    ]
+  },
+  "mixins": [
+    "harvestleveltooltip.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": [
+      "1.21",
+      "1.21.1"
+    ]
+  }
+}
