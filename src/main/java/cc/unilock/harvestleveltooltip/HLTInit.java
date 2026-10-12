@@ -16,8 +16,8 @@ public class HLTInit implements ModInitializer {
 		PayloadTypeRegistry.playS2C().register(TagTiersPayload.ID, TagTiersPayload.CODEC);
 
 		ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
-			if (ServerPlayNetworking.canSend(handler.getPlayer(), TagTiersPayload.ID)) {
-				ServerPlayNetworking.send(handler.getPlayer(), new TagTiersPayload(HLTagProcessor.INSTANCE.getTagTiers()));
+			if (ServerPlayNetworking.canSend(handler, TagTiersPayload.ID)) {
+				sender.sendPacket(new TagTiersPayload(HLTagProcessor.INSTANCE.getTagTiers()));
 			}
 		});
 	}

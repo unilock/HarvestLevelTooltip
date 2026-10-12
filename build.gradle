@@ -31,6 +31,7 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
+	modCompileOnly fabricApi.module('fabric-item-api-v1', project.fapi_version)
 	modCompileOnly fabricApi.module('fabric-lifecycle-events-v1', project.fapi_version)
 	modCompileOnly fabricApi.module('fabric-networking-api-v1', project.fapi_version)
 	modCompileOnly fabricApi.module('fabric-resource-loader-v0', project.fapi_version)

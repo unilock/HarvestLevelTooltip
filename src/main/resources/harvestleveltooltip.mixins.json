@@ -2,12 +2,11 @@
   "required": true,
   "package": "cc.unilock.harvestleveltooltip.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [],
-  "client": [
-    "ItemStackMixin",
+  "mixins": [
     "TagEntryAccessor",
     "TagGroupLoaderMixin"
   ],
+  "client": [],
   "injectors": {
     "defaultRequire": 1
   }

@@ -16,11 +16,11 @@ public class HLTag2Tier {
 	private final Object2IntArrayMap<Identifier> tagTiers = new Object2IntArrayMap<>();
 
 	public void clear() {
-		INSTANCE.tagTiers.clear();
+		this.tagTiers.clear();
 	}
 
 	public void load(Object2IntArrayMap<Identifier> tagTiers) {
-		INSTANCE.tagTiers.putAll(tagTiers);
+		this.tagTiers.putAll(tagTiers);
 	}
 
 	public String getTier(Identifier id) {
